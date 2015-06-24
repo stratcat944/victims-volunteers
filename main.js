@@ -1,13 +1,32 @@
-// Prompt user to enter the number of victims.
-var vicNumber = prompt("Please enter the number of victims you wish to help.") {
-	for(i = 0; i < vicNumber; 1++);
+// ++++++++++++++  Victims & Volunteers  ++++++++++++++ //
+
+// Initialize arrays
+
+var vicName = []
+
+var vicPhone = []
+
+var vicStreet = []
+
+var volName = []
+
+var volPhone = []
+
+var volStreet = []
+
+
+var vicNumber = prompt ("Enter the number of victims you would like to help.");
+
+for (i = vicNumber ; i < vicNumber ; i++ ) {
+	vicName.push(prompt("Enter the victim's name:"));
+	vicPhone.push(prompt("Enter the victim's phone number;"));
+	vicStreet.push(prompt("Enter the victim's street address:"));
 }
-var vicName = prompt("Please enter the victim's name.")
 
-var vicNumber = ("Please enter the victim's number.")
+var volNumber = prompt ("Enter the number of volunteers you would like to enlist:");
 
-var vicStreet = ("Please enter the victim's street.")
-
-// Prompt user to enter number of volunteers.
-var volNumber = prompt("Please enter the number of volunteers you wish to enlist.");
-
+for ( i = volNumber ; i < volNumber ; i++ ) {
+	volName.push(prompt("Enter the volunteer's name:"));
+	volPhone.push(prompt("Enter the volunteer's phone number:"));
+	volStreet.push(prompt("Enter the volunteer's street address:"));
+}
